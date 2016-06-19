@@ -47,11 +47,6 @@ public class MainActivity extends AppCompatActivity {
         }catch(NullPointerException n){
 
         }
-        /**
-        doBindService();
-        Intent music = new Intent();
-        music.setClass(this,PlayMusic.class);
-        startService(music);**/
 
     }
 
@@ -123,34 +118,4 @@ public class MainActivity extends AppCompatActivity {
         exitDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         exitDialog.show();
     }
-    /**
-    private boolean mIsBound = false;
-    PlayMusic mServ;
-    private ServiceConnection Scon =new ServiceConnection(){
-        @Override
-        public void onServiceConnected(ComponentName name, IBinder
-                binder) {
-            PlayMusic.ServiceBinder bind = (PlayMusic.ServiceBinder) binder;
-            mServ = bind.getService();
-        }
-
-        public void onServiceDisconnected(ComponentName name) {
-            mServ = null;
-        }
-    };
-
-    void doBindService(){
-        bindService(new Intent(this,PlayMusic.class),
-                Scon,Context.BIND_AUTO_CREATE);
-        mIsBound = true;
-    }
-
-    void doUnbindService()
-    {
-        if(mIsBound)
-        {
-            unbindService(Scon);
-            mIsBound = false;
-        }
-    }**/
 }

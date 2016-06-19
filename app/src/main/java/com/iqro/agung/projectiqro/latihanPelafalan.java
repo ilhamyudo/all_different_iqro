@@ -17,7 +17,7 @@ public class latihanPelafalan extends AppCompatActivity {
 
     private int rekamOn;
     ImageView selectedImg;
-    ImageButton rekam;
+    ImageButton rekam, selected;
     TextView txtTemp;
     String tmpStr="";
 
@@ -87,11 +87,64 @@ public class latihanPelafalan extends AppCompatActivity {
 
             if (tmpStr.equalsIgnoreCase("Alif")){
                 selectedImg.setBackgroundResource(R.drawable.a_03);
-                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+                selected = (ImageButton)findViewById(R.id.latihan_alif);
+                selected.setBackgroundResource(R.drawable.a_02);
             }else if (tmpStr.equalsIgnoreCase("Mbak")){
                 selectedImg.setBackgroundResource(R.drawable.ba_03);
+                selected = (ImageButton)findViewById(R.id.latihan_ba);
+                selected.setBackgroundResource(R.drawable.ba_02);
+            }else if (tmpStr.equalsIgnoreCase("Tak")){
+                selectedImg.setBackgroundResource(R.drawable.ta_03);
+                selected = (ImageButton)findViewById(R.id.latihan_ta);
+                selected.setBackgroundResource(R.drawable.ta_02);
+            }else if (tmpStr.equalsIgnoreCase("hack")){
+                selectedImg.setBackgroundResource(R.drawable.ha_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("coc")){
+                selectedImg.setBackgroundResource(R.drawable.kho_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("dak")){
+                selectedImg.setBackgroundResource(R.drawable.da_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("rok")){
+                selectedImg.setBackgroundResource(R.drawable.ro_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("za")){
+                selectedImg.setBackgroundResource(R.drawable.za_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("shock")){
+                selectedImg.setBackgroundResource(R.drawable.syo_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("do")){
+                selectedImg.setBackgroundResource(R.drawable.dho_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("i'm")){
+                selectedImg.setBackgroundResource(R.drawable.dho_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("go")){
+                selectedImg.setBackgroundResource(R.drawable.dho_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("fac")){
+                selectedImg.setBackgroundResource(R.drawable.fa_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("kak")){
+                selectedImg.setBackgroundResource(R.drawable.qo_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("la")){
+                selectedImg.setBackgroundResource(R.drawable.la_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("ma")){
+                selectedImg.setBackgroundResource(R.drawable.ma_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("wa")){
+                selectedImg.setBackgroundResource(R.drawable.wa_03);
+                //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
+            }else if (tmpStr.equalsIgnoreCase("ya")){
+                selectedImg.setBackgroundResource(R.drawable.ya_03);
                 //hijayahBesar.setBackgroundResource(R.drawable.ba_03);
             }
+
+
         }
 
         /*switch(requestCode){
