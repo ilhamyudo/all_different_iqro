@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="16dp"
+    tools:context="com.iqro.agung.projectiqro.latihanPelafalan"
+    android:background="@drawable/bg_latihan_pelafalan2">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/hasil_rekam"
+        android:layout_marginTop="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ba_03" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/bg_huruf_hijaiyah2"
+        android:layout_below="@+id/hasil_rekam"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_alif"
+        android:background="@drawable/hijayah_putih_a"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_marginTop="24dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ba"
+        android:background="@drawable/hijayah_putih_ba"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_alif"
+        android:layout_toLeftOf="@+id/latihan_alif"
+        android:layout_toStartOf="@+id/latihan_alif" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ta"
+        android:background="@drawable/hijayah_putih_ta"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ba"
+        android:layout_toLeftOf="@+id/latihan_ba"
+        android:layout_toStartOf="@+id/latihan_ba" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_tsa"
+        android:background="@drawable/hijayah_putih_tsa"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ta"
+        android:layout_toLeftOf="@+id/latihan_ta"
+        android:layout_toStartOf="@+id/latihan_ta" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ja"
+        android:background="@drawable/hijayah_putih_ja"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_tsa"
+        android:layout_toLeftOf="@+id/latihan_tsa"
+        android:layout_toStartOf="@+id/latihan_tsa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ha"
+        android:background="@drawable/hijayah_putih_ha"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ja"
+        android:layout_toLeftOf="@+id/latihan_ja"
+        android:layout_toStartOf="@+id/latihan_ja" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_kho"
+        android:background="@drawable/hijayah_putih_kho"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_to"
+        android:layout_toLeftOf="@+id/latihan_ha"
+        android:layout_toStartOf="@+id/latihan_ha" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_da"
+        android:background="@drawable/hijayah_putih_da"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_kho"
+        android:layout_toLeftOf="@+id/latihan_kho"
+        android:layout_toStartOf="@+id/latihan_kho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_dza"
+        android:background="@drawable/hijayah_putih_dza"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_ain"
+        android:layout_toLeftOf="@+id/latihan_da"
+        android:layout_toStartOf="@+id/latihan_da" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ro"
+        android:background="@drawable/hijayah_putih_ro"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_qo"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_za"
+        android:background="@drawable/hijayah_putih_za"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_below="@+id/latihan_alif"
+        android:layout_toLeftOf="@+id/latihan_ro"
+        android:layout_toStartOf="@+id/latihan_ro" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_sa"
+        android:background="@drawable/hijayah_putih_sa"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_below="@+id/latihan_ba"
+        android:layout_toLeftOf="@+id/latihan_za"
+        android:layout_toStartOf="@+id/latihan_za" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_sya"
+        android:background="@drawable/hijayah_putih_sya"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_ka"
+        android:layout_toLeftOf="@+id/latihan_sa"
+        android:layout_toStartOf="@+id/latihan_sa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_sho"
+        android:background="@drawable/hijayah_putih_syo"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_la"
+        android:layout_toLeftOf="@+id/latihan_sya"
+        android:layout_toStartOf="@+id/latihan_sya" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_dho"
+        android:background="@drawable/hijayah_putih_dho"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_above="@+id/latihan_ma"
+        android:layout_toLeftOf="@+id/latihan_sho"
+        android:layout_toStartOf="@+id/latihan_sho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_to"
+        android:background="@drawable/hijayah_putih_tho"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_dho"
+        android:layout_toLeftOf="@+id/latihan_dho"
+        android:layout_toStartOf="@+id/latihan_dho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_zo"
+        android:background="@drawable/hijayah_putih_zho"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_to"
+        android:layout_toLeftOf="@+id/latihan_to"
+        android:layout_toStartOf="@+id/latihan_to" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ain"
+        android:background="@drawable/hijayah_putih_ain"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_zo"
+        android:layout_toLeftOf="@+id/latihan_zo"
+        android:layout_toStartOf="@+id/latihan_zo" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_gho"
+        android:background="@drawable/hijayah_putih_gho"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ain"
+        android:layout_toLeftOf="@+id/latihan_ain"
+        android:layout_toStartOf="@+id/latihan_ain" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_fa"
+        android:background="@drawable/hijayah_putih_fa"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_qo"
+        android:layout_toRightOf="@+id/latihan_ba"
+        android:layout_toEndOf="@+id/latihan_ba" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_qo"
+        android:background="@drawable/hijayah_putih_qo"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ka"
+        android:layout_toLeftOf="@+id/latihan_fa"
+        android:layout_toStartOf="@+id/latihan_fa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ka"
+        android:background="@drawable/hijayah_putih_ka"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_below="@+id/latihan_sa"
+        android:layout_toLeftOf="@+id/latihan_qo"
+        android:layout_toStartOf="@+id/latihan_qo" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_la"
+        android:background="@drawable/hijayah_putih_la"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ka"
+        android:layout_toLeftOf="@+id/latihan_ka"
+        android:layout_toStartOf="@+id/latihan_ka" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ma"
+        android:background="@drawable/hijayah_putih_ma"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_la"
+        android:layout_toLeftOf="@+id/latihan_la"
+        android:layout_toStartOf="@+id/latihan_la" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_na"
+        android:background="@drawable/hijayah_putih_na"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ma"
+        android:layout_toLeftOf="@+id/latihan_ma"
+        android:layout_toStartOf="@+id/latihan_ma" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_wa"
+        android:background="@drawable/hijayah_putih_wa"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_na"
+        android:layout_toLeftOf="@+id/latihan_na"
+        android:layout_toStartOf="@+id/latihan_na" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_haq"
+        android:background="@drawable/hijayah_putih_haq"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_alignTop="@+id/latihan_ya"
+        android:layout_toLeftOf="@+id/latihan_wa"
+        android:layout_toStartOf="@+id/latihan_wa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_ya"
+        android:background="@drawable/hijayah_putih_ya"
+        android:onClick="OnButtonPelafalanClick"
+        android:layout_below="@+id/latihan_ain"
+        android:layout_toLeftOf="@+id/latihan_haq"
+        android:layout_toStartOf="@+id/latihan_haq" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_btnHome"
+        android:background="@drawable/btn_home"
+        android:onClick="OnButtonPelafalanBack"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/latihan_ma"
+        android:layout_toEndOf="@+id/latihan_ma" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/latihan_btnSound"
+        android:background="@drawable/btn_sound"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/latihan_wa"
+        android:layout_toEndOf="@+id/latihan_wa" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/latihan_btnRekam"
+        android:background="@drawable/btn_rekam_off2"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:onClick="onClickLatihanRecord" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/latihan_instruksi"
+        android:background="@drawable/ket_rekam_audio2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/latihan_btnHome"
+        android:layout_toRightOf="@+id/latihan_ain"
+        android:layout_toEndOf="@+id/latihan_ain" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:id="@+id/latihan_status"
+        android:background="@drawable/ket_voice_berhasil"
+        android:layout_alignTop="@+id/latihan_instruksi"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="-8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/hasil_rekam"
+        android:layout_toRightOf="@+id/latihan_btnHome"
+        android:layout_toEndOf="@+id/latihan_btnHome"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

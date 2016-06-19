@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iqro.agung.projectiqro.Pelafalan"
+    android:background="@drawable/bg_pelafalan_huruf_hijaiyah2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/bg_huruf_hijaiyah2"
+        android:layout_above="@+id/pelafalan_btn_home"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pelafalan_arrowR"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/arrow_right"
+        android:layout_above="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:onClick="OnButtonPelafalanArrowRightClick" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pelafalan_arrowL"
+        android:background="@drawable/arrow_left"
+        android:layout_alignTop="@+id/pelafalan_arrowR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnButtonPelafalanArrowLeftClick" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/pelafalan_btn_home"
+        android:background="@drawable/btn_home"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/pelafalan_arrowR"
+        android:layout_toStartOf="@+id/pelafalan_arrowR"
+        android:onClick="OnButtonPelafalanBack" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/pelafalan_btn_sound"
+        android:background="@drawable/btn_sound"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_alignTop="@+id/pelafalan_btn_home"
+        android:layout_toLeftOf="@+id/pelafalan_btn_home"
+        android:layout_toStartOf="@+id/pelafalan_btn_home" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_a"
+        android:background="@drawable/hijayah_putih_a"
+        android:layout_marginTop="32dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/pelafalan_arrowR"
+        android:layout_alignStart="@+id/pelafalan_arrowR" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ba"
+        android:background="@drawable/hijayah_putih_ba"
+        android:layout_alignTop="@+id/pelafalan_hijayah_a"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_a"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_a" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ta"
+        android:background="@drawable/hijayah_putih_ta"
+        android:layout_alignTop="@+id/pelafalan_hijayah_ba"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ba"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ba" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_tsa"
+        android:background="@drawable/hijayah_putih_tsa"
+        android:layout_alignTop="@+id/pelafalan_hijayah_ta"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ta"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ta" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ja"
+        android:background="@drawable/hijayah_putih_ja"
+        android:layout_alignTop="@+id/pelafalan_hijayah_tsa"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_tsa"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_tsa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ha"
+        android:background="@drawable/hijayah_putih_ha"
+        android:layout_alignTop="@+id/pelafalan_hijayah_ja"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ja"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ja" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_kho"
+        android:background="@drawable/hijayah_putih_kho"
+        android:layout_alignTop="@+id/pelafalan_hijayah_ha"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ha"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ha" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_da"
+        android:background="@drawable/hijayah_putih_da"
+        android:layout_alignTop="@+id/pelafalan_hijayah_kho"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_kho"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_kho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_dza"
+        android:background="@drawable/hijayah_putih_dza"
+        android:layout_alignTop="@+id/pelafalan_hijayah_da"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_da"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_da" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ro"
+        android:background="@drawable/hijayah_putih_ro"
+        android:layout_below="@+id/pelafalan_hijayah_a"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_za"
+        android:background="@drawable/hijayah_putih_za"
+        android:layout_below="@+id/pelafalan_hijayah_a"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ro"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ro" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_sa"
+        android:background="@drawable/hijayah_putih_sa"
+        android:layout_below="@+id/pelafalan_hijayah_ba"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_za"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_za" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_sya"
+        android:background="@drawable/hijayah_putih_sya"
+        android:layout_below="@+id/pelafalan_hijayah_ta"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_sa"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_sa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_sho"
+        android:background="@drawable/hijayah_putih_syo"
+        android:layout_above="@+id/pelafalan_hijayah_ka"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_sya"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_sya" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_dho"
+        android:background="@drawable/hijayah_putih_dho"
+        android:layout_below="@+id/pelafalan_hijayah_ja"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_sho"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_sho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_tho"
+        android:background="@drawable/hijayah_putih_tho"
+        android:layout_below="@+id/pelafalan_hijayah_ha"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_dho"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_dho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_zho"
+        android:background="@drawable/hijayah_putih_zho"
+        android:layout_below="@+id/pelafalan_hijayah_kho"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_tho"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_tho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ain"
+        android:background="@drawable/hijayah_putih_ain"
+        android:layout_above="@+id/pelafalan_hijayah_haq"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_zho"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_zho" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_gho"
+        android:background="@drawable/hijayah_putih_gho"
+        android:layout_above="@+id/pelafalan_hijayah_ya"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ain"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ain" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_fa"
+        android:background="@drawable/hijayah_putih_fa"
+        android:layout_below="@+id/pelafalan_hijayah_ro"
+        android:layout_toRightOf="@+id/pelafalan_hijayah_ba"
+        android:layout_toEndOf="@+id/pelafalan_hijayah_ba" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_qo"
+        android:background="@drawable/hijayah_putih_qo"
+        android:layout_below="@+id/pelafalan_hijayah_za"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_fa"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_fa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ka"
+        android:background="@drawable/hijayah_putih_ka"
+        android:layout_below="@+id/pelafalan_hijayah_sa"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_qo"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_qo" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_la"
+        android:background="@drawable/hijayah_putih_la"
+        android:layout_alignTop="@+id/pelafalan_hijayah_ka"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ka"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ka" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ma"
+        android:background="@drawable/hijayah_putih_ma"
+        android:layout_below="@+id/pelafalan_hijayah_sho"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_la"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_la" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_na"
+        android:background="@drawable/hijayah_putih_na"
+        android:layout_below="@+id/pelafalan_hijayah_dho"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_ma"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_ma" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_wa"
+        android:background="@drawable/hijayah_putih_wa"
+        android:layout_alignTop="@+id/pelafalan_hijayah_na"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_na"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_na" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_haq"
+        android:background="@drawable/hijayah_putih_haq"
+        android:layout_alignTop="@+id/pelafalan_hijayah_wa"
+        android:layout_toLeftOf="@+id/pelafalan_hijayah_wa"
+        android:layout_toStartOf="@+id/pelafalan_hijayah_wa" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/pelafalan_hijayah_ya"
+        android:background="@drawable/hijayah_putih_ya"
+        android:layout_below="@+id/pelafalan_hijayah_ain"
+        android:layout_alignLeft="@+id/pelafalan_hijayah_dza"
+        android:layout_alignStart="@+id/pelafalan_hijayah_dza" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/pelafalan_hijayah"
+        android:layout_above="@+id/pelafalan_btn_automatic"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/a_03" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/pelafalan_btn_automatic"
+        android:layout_above="@+id/pelafalan_hijayah_a"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCLickAutoPelafalan"
+        android:background="@drawable/btn_automatic" />
+
+</RelativeLayout>
